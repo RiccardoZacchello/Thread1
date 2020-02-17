@@ -22,7 +22,9 @@ Contatore cont;
     @Override
     public void run() {
         System.out.println("Starting " + ThreadName);
+        synchronized(cont){
         cont.stampaCOnatatore();
+        }
         System.out.println("Thread "+ThreadName+"exiting");
     }
     
