@@ -13,7 +13,7 @@ public class RS implements Runnable {
 Thread T;
 String ThreadName;
 Contatore cont;
-    public RS(Contatore cont, String ThreadName){
+    public RS( String ThreadName,Contatore cont ){
         T=new Thread(this);
         T.start();
         this.ThreadName=ThreadName;
@@ -21,7 +21,9 @@ Contatore cont;
     }
     @Override
     public void run() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Starting " + ThreadName);
+        cont.stampaCOnatatore();
+        System.out.println("Thread "+ThreadName+"exiting");
     }
     
 }

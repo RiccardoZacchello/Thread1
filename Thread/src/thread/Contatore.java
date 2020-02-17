@@ -12,7 +12,7 @@ package thread;
 public class Contatore {
     public void stampaCOnatatore(){
         for (int i = 5; i > 0; i--) {
-            System.out.println("contatore "+i);
+            System.out.println("\tcontatore "+i);
         }
     }
 }
