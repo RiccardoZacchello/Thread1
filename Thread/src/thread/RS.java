@@ -22,10 +22,10 @@ Contatore cont;
     @Override
     public void run() {
         System.out.println("Starting " + ThreadName);
-        synchronized(cont){
+ //       synchronized(cont){  //mettere "" in un blocco al posto che al metodo
         cont.stampaCOnatatore();
-        }
-        System.out.println("Thread "+ThreadName+"exiting");
+     //   }
+        System.out.println("Thread "+ThreadName+" exiting");
     }
     
 }

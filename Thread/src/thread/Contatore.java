@@ -10,7 +10,7 @@ package thread;
  * @author zacchello.riccardo
  */
 public class Contatore {
-    public void stampaCOnatatore(){
+  synchronized public void  stampaCOnatatore(){ // usare synchronized in un metodo
         for (int i = 5; i > 0; i--) {
             System.out.println("\tcontatore "+i);
         }
