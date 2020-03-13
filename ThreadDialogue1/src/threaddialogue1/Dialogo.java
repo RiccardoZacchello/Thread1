@@ -24,7 +24,7 @@ public class Dialogo implements Runnable {
          Thread.sleep(3000);
          System.out.println("Tutto bene");
     }
-    public void StampaDialogo2() throws InterruptedException{
+    public void StampaDialogo2() throws InterruptedException{     
          Thread.sleep(3000);
         System.out.println("Ciao");
          Thread.sleep(5000);
