@@ -21,14 +21,18 @@ public class Dialogo implements Runnable {
         System.out.println("Ciao1");
         Thread.sleep(5000);
         System.out.println("Come va?");
-         Thread.sleep(3000);
+         Thread.sleep(3500);
          System.out.println("Tutto bene");
+          Thread.sleep(5000);
+         System.out.println("Tutto bene1");
     }
     public void StampaDialogo2() throws InterruptedException{     
          Thread.sleep(3000);
         System.out.println("Ciao");
          Thread.sleep(5000);
         System.out.println("Tutto bene tu?");
+         Thread.sleep(3000);
+         System.out.println("Tutto bene");
         
     }
 
